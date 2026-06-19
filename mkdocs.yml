@@ -1,0 +1,15 @@
+site_name: Guía de Git y GitHub
+
+theme:
+  name: material
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Inicio: index.md
+  - Instalación: instalacion.md
+  - Comandos: comandos.md
