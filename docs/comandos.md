@@ -1,29 +1,47 @@
-# Comandos de Git
+# Comandos básicos de Git
 
-estos son unos de los comando mas utilizados en git.
+Los siguientes comandos son fundamentales para trabajar con Git.
 
-| Comando | Descripción |
-|----------|------------|
-| git init | Crear repositorio |
-| git add . | Agregar archivos |
-| git commit | Guardar cambios |
+## Tabla de comandos
+
+| Comando | Función |
+|----------|----------|
+| git init | Inicializa un repositorio |
+| git status | Muestra el estado actual |
+| git add . | Agrega archivos al área de preparación |
+| git commit | Guarda cambios en el historial |
+| git push | Envía cambios a GitHub |
+
+## Ejemplo de uso
 
 === "Linux"
 
     ```
-    Usar Terminar
+    bash
     git init
+    git add .
+    git commit -m "Primer commit"
+    git push origin main
     ```
 
 === "Windows"
 
     ```
-    Usar powershell
+    powershell
     git init
+    git add .
+    git commit -m "Primer commit"
+    git push origin main
     ```
 
-!!! warning "Importante"
-    Realiza commits frecuentes.
+## Flujo básico de trabajo
 
+1. Crear un repositorio.
+2. Agregar archivos.
+3. Realizar commits.
+4. Enviar cambios a GitHub.
 
-Regresar a [inicio](index.md).
+!!! warning "Advertencia"
+    Antes de ejecutar `git push`, verifica que estás trabajando en la rama correcta.
+
+Volver al [Inicio](index.md).

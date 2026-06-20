@@ -1,10 +1,23 @@
-# Documentación técnica con Mkdocs
+# Guía de Git y GitHub
 
-Bienvenido a la documentación.
+Bienvenido a esta documentación sobre Git y GitHub.
+
+Git es un sistema de control de versiones que permite registrar cambios en archivos y colaborar con otros desarrolladores. GitHub es una plataforma que permite almacenar repositorios Git en la nube.
+
+## ¿Por qué utilizar Git?
+
+- Control de versiones.
+- Trabajo colaborativo.
+- Historial de cambios.
+- Recuperación de versiones anteriores.
 
 !!! tip "Consejo"
-    Aprende Git practicando.
+    Realiza commits frecuentes para mantener un historial organizado de tu proyecto.
 
-Ir a [Instalación](instalacion.md).
+## Contenido de la documentación
 
-Ir a [Comandos](comandos.md).
+- Instalación de Git.
+- Comandos básicos.
+- Flujo de trabajo inicial.
+
+Ir a la página de [Instalación](instalacion.md).

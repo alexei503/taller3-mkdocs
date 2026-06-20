@@ -1,26 +1,46 @@
 # Instalación de Git
 
-Si quieres instalar Git en Linux a través de un instalador binario, en general puedes hacerlo mediante la herramienta básica de administración de paquetes que trae tu distribución. Si estás en Fedora por ejemplo, puedes usar yum:
+Git está disponible para Windows, Linux y macOS.
+
+## Instalación en Ubuntu
+
+Actualiza los repositorios:
 
 ```bash
-yum install git
+sudo apt update
 ```
 
-Si estás en una distribución basada en Debian como Ubuntu, puedes usar apt-get:
+Instala Git:
 
 ```bash
-$ apt-get install git
+sudo apt install git -y
 ```
 
-luego verificas la version
+Verifica la instalación:
 
 ```bash
 git --version
 ```
 
-Si todo salio bien.
+## Configuración inicial
 
-![Git](img/arquitectura.png)
+Configura tu nombre de usuario:
 
+```bash
+git config --global user.name "Tu Nombre"
+```
+
+Configura tu correo electrónico:
+
+```bash
+git config --global user.email "correo@ejemplo.com"
+```
+
+## Imagen de referencia
+
+![Arquitectura Git](img/arquitectura.png)
+
+!!! note "Importante"
+    Configurar correctamente el nombre y correo permite identificar quién realizó cada cambio en el repositorio.
 
 Volver al [Inicio](index.md).
