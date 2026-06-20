@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comandos-de-git" class="md-skip">
+        <a href="#comandos-basicos-de-git" class="md-skip">
           Skip to content
         </a>
       
@@ -257,6 +257,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comandos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -273,6 +291,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-comandos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de comandos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo de uso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-basico-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo básico de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -298,6 +368,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-comandos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de comandos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo de uso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-basico-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo básico de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -313,49 +424,72 @@
 
 
 
-<h1 id="comandos-de-git">Comandos de Git</h1>
-<p>estos son unos de los comando mas utilizados en git.</p>
+<h1 id="comandos-basicos-de-git">Comandos básicos de Git</h1>
+<p>Los siguientes comandos son fundamentales para trabajar con Git.</p>
+<h2 id="tabla-de-comandos">Tabla de comandos</h2>
 <table>
 <thead>
 <tr>
 <th>Comando</th>
-<th>Descripción</th>
+<th>Función</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>git init</td>
-<td>Crear repositorio</td>
+<td>Inicializa un repositorio</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Muestra el estado actual</td>
 </tr>
 <tr>
 <td>git add .</td>
-<td>Agregar archivos</td>
+<td>Agrega archivos al área de preparación</td>
 </tr>
 <tr>
 <td>git commit</td>
-<td>Guardar cambios</td>
+<td>Guarda cambios en el historial</td>
+</tr>
+<tr>
+<td>git push</td>
+<td>Envía cambios a GitHub</td>
 </tr>
 </tbody>
 </table>
+<h2 id="ejemplo-de-uso">Ejemplo de uso</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux</label><label for="__tabbed_1_2">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>Usar Terminar
+<div class="highlight"><pre><span></span><code>bash
 git init
+git add .
+git commit -m &quot;Primer commit&quot;
+git push origin main
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>Usar powershell
+<div class="highlight"><pre><span></span><code>powershell
 git init
+git add .
+git commit -m &quot;Primer commit&quot;
+git push origin main
 </code></pre></div>
 </div>
 </div>
 </div>
+<h2 id="flujo-basico-de-trabajo">Flujo básico de trabajo</h2>
+<ol>
+<li>Crear un repositorio.</li>
+<li>Agregar archivos.</li>
+<li>Realizar commits.</li>
+<li>Enviar cambios a GitHub.</li>
+</ol>
 <div class="admonition warning">
-<p class="admonition-title">Importante</p>
-<p>Realiza commits frecuentes.</p>
+<p class="admonition-title">Advertencia</p>
+<p>Antes de ejecutar <code>git push</code>, verifica que estás trabajando en la rama correcta.</p>
 </div>
-<p>Regresar a <a href="../">inicio</a>.</p>
+<p>Volver al <a href="../">Inicio</a>.</p>
 
 
 

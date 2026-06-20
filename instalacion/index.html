@@ -232,6 +232,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalación
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -248,6 +266,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalación en Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración inicial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagen-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagen de referencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -300,6 +370,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-en-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalación en Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración inicial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagen-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagen de referencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -316,17 +427,30 @@
 
 
 <h1 id="instalacion-de-git">Instalación de Git</h1>
-<p>Si quieres instalar Git en Linux a través de un instalador binario, en general puedes hacerlo mediante la herramienta básica de administración de paquetes que trae tu distribución. Si estás en Fedora por ejemplo, puedes usar yum:</p>
-<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>git
+<p>Git está disponible para Windows, Linux y macOS.</p>
+<h2 id="instalacion-en-ubuntu">Instalación en Ubuntu</h2>
+<p>Actualiza los repositorios:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </code></pre></div>
-<p>Si estás en una distribución basada en Debian como Ubuntu, puedes usar apt-get:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git
+<p>Instala Git:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>-y
 </code></pre></div>
-<p>luego verificas la version</p>
+<p>Verifica la instalación:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>--version
 </code></pre></div>
-<p>Si todo salio bien.</p>
-<p><img alt="Git" src="../img/arquitectura.png" /></p>
+<h2 id="configuracion-inicial">Configuración inicial</h2>
+<p>Configura tu nombre de usuario:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Tu Nombre&quot;</span>
+</code></pre></div>
+<p>Configura tu correo electrónico:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;correo@ejemplo.com&quot;</span>
+</code></pre></div>
+<h2 id="imagen-de-referencia">Imagen de referencia</h2>
+<p><img alt="Arquitectura Git" src="../img/arquitectura.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Importante</p>
+<p>Configurar correctamente el nombre y correo permite identificar quién realizó cada cambio en el repositorio.</p>
+</div>
 <p>Volver al <a href="../">Inicio</a>.</p>
 
 
