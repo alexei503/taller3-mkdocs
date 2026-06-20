@@ -1,5 +1,7 @@
 # Comandos de Git
 
+estos son unos de los comando mas utilizados en git.
+
 | Comando | Descripción |
 |----------|------------|
 | git init | Crear repositorio |
@@ -8,15 +10,20 @@
 
 === "Linux"
 
-    ```bash
+    ```
+    Usar Terminar
     git init
     ```
 
 === "Windows"
 
-    ```powershell
+    ```
+    Usar powershell
     git init
     ```
 
 !!! warning "Importante"
     Realiza commits frecuentes.
+
+
+Regresar a [inicio](index.md).

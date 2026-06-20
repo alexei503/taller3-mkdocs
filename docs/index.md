@@ -6,4 +6,5 @@ Bienvenido a la documentación.
     Aprende Git practicando.
 
 Ir a [Instalación](instalacion.md).
+
 Ir a [Comandos](comandos.md).
