@@ -1,4 +1,4 @@
-# Guía de Git y GitHub
+# Documentación técnica con Mkdocs
 
 Bienvenido a la documentación.
 
@@ -6,3 +6,4 @@ Bienvenido a la documentación.
     Aprende Git practicando.
 
 Ir a [Instalación](instalacion.md).
+Ir a [Comandos](comandos.md).
